@@ -23,7 +23,7 @@ module "eks" {
 
   eks_managed_node_group_defaults = {
     ami_type       = "AL2_x86_64"
-    instance_types = ["m5.large"]
+    instance_types = ["t2.micro"]
     # instance_types = ["t2.micro", "t2.medium", "t3.small", "t3.micro"]
     iam_role_attach_cni_policy = true
     # vpc_security_group_ids                = [aws_security_group.additional.id]
